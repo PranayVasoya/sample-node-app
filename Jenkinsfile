@@ -6,6 +6,12 @@ pipeline {
     // as the build environment is defined by the Docker image itself.
 
     stages {
+        // This stage downloads your code from GitHub
+        stage('Checkout') {
+            steps {
+                git url: 'https://github.com/PranayVasoya/sample-node-app.git', branch: 'master'
+            }
+        }
 
         stage('Build') {
             steps {
