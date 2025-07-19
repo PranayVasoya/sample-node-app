@@ -6,13 +6,6 @@ pipeline {
     // as the build environment is defined by the Docker image itself.
 
     stages {
-        stage('Checkout') {
-            steps {
-                // Checkout the source code from SCM (e.g., Git)
-                // ⚠️ REPLACE THE URL BELOW WITH YOUR ACTUAL PATH ⚠️
-                git branch: 'main', url: 'file:///C:/Users/Pranay/Desktop/sample-node-app'
-            }
-        }
 
         stage('Build') {
             steps {
