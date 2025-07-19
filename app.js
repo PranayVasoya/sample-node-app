@@ -5,8 +5,7 @@ const port = 3000;
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello from Dockerized Jenkins CI/CD!\n');
-  res.end('Im Pranay Vasoya and this is my first Jenkins pipeline.\n');
+    res.end('Hello from Dockerized Jenkins CI/CD!\nIm Pranay Vasoya and this is my first Jenkins pipeline.\n');
 });
 
 server.listen(port, hostname, () => {
